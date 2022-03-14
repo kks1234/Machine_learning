@@ -22,7 +22,7 @@ class DiabetesDataset(Dataset):
 
 dataset = DiabetesDataset("./diabetes.csv")
 
-trainloader = DataLoader(dataset=dataset, batch_size=16, shuffle=True, num_workers=3)
+trainloader = DataLoader(dataset=dataset, batch_size=16, shuffle=True, num_workers=0)
 
 
 class LogisticModel(torch.nn.Module):
